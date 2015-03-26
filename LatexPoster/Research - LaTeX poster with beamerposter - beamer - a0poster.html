@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+<meta name="keywords" content="latex poster beamer a0poster beamerposter scientific conference">
+<link rel="stylesheet" href="tabs.css">
+<script language="Javascript" type="text/javascript">
+function change (picurl,id) {
+document[id].src = picurl;
+}
+</script> 
+<link rel="SHORTCUT ICON" href="logo_blue.ico">
+<title>Research - LaTeX poster with beamerposter - beamer - a0poster</title>
+</head>
+
+<body>
+<ul id="tabmenu">
+  <li><a href="index.html">Personal</a></li>
+  <li><a href="research.html">Research</a></li>
+  <li><a href="publications.php">Publications</a></li>
+  <li><a href="teaching.html">Teaching</a></li>
+  <li><a href="links.html">Links</a></li>
+  <li><a class="active" href="software.html">Software</a></li>
+</ul>
+
+<div id="content">
+  <h1>The LaTeX <tt>beamerposter</tt> package</h1>
+  <table class="bg">
+     <tr> <td class="bg"> LaTeX poster with <tt>beamerposter</tt>  - <tt>beamer</tt> - <tt>a0poster</tt> </td> <td align="right"></td></tr>
+  </table>
+
+  <h2>Creating a scientific LaTeX poster with the <tt>beamerposter</tt> package</h2> 
+
+  <p>The LaTeX <b><a href="download/beamerposter.sty"><tt>beamerposter</tt></a> package</b> was created by 
+     <a href="/~dreuw/">Philippe Dreuw</a> and <a href="/~deselaers/">Thomas Deselaers</a>. 
+     It is an extension of the LaTeX <a href="http://latex-beamer.sourceforge.net/"><tt>beamer</tt></a> 
+     and the <a href="http://www.physik.uni-augsburg.de/theo3/Comp/hp750c/computing_hp750c_A0.en.shtml">
+     <tt>a0poster</tt></a> classes in order to create LaTeX posters, e.g. a DIN-A0 size LaTeX poster 
+     in landscape or portrait orientation. Furthermore it is possible to scale the poster fonts to your needs.
+  </p>
+
+  <p>The package allows you to benefit from the nice color box handling and alignment in the 
+     <a href="http://latex-beamer.sourceforge.net/" target="_blank"><tt>beamer</tt></a> 
+     class (e.g. with rounded corners and shadows) in order to create quite fast pretty conference 
+     posters.</p>
+
+  <p><b>Features:</b></p>
+  <ul>
+    <li>scalable fonts using the <tt>fp</tt> and <tt>type1cm</tt> packages</li>
+    <li>posters in DIN-A0, DIN-A1, DIN-A2, DIN-A3, DIN-A4, and custom sizes like double DIN-A0 possible</li>
+    <li>still applicable to custom beamer slides, e.g. <a href="#169-slides">16:9 slides for a widescreen (i.e. 1.78 aspect ratio)</a></li>
+    <li>orientation: landscape or portrait</li>
+    <li>debug mode</li>
+  </ul>
+
+  <p><b>LaTeX requirements:</b></p>
+  <ul>
+    <li><a href="http://bitbucket.org/rivanvx/beamer/downloads" target="_blank"><tt>beamer</tt> class</a> (all examples with beamer v.3.07 - Note: with beamer 3.10 do NOT use option <tt>hyperref={pdfpagelabels=false}</tt>)</li>
+    <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/fp/" target="_blank"><tt>fp</tt> package</a></li>
+    <li><a href="http://tug.ctan.org/tex-archive/macros/latex/contrib/xkeyval/" target="_blank"><tt>xkeyval</tt> package</a> (in a version supporting choice keys, e.g. <tt>v2.5f</tt>)</li>
+    <li><a href="http://tug.ctan.org/tex-archive/macros/latex/contrib/type1cm/" target="_blank"><tt>type1cm</tt> package</a> for scalable and huge math fonts</li>
+    <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/paralist/" target="_blank"><tt>paralist</tt> package</a></li>
+  </ul>
+
+    <p>The <tt>beamerposter</tt> package is available from CTAN and <a href="#news">from my webpage</a>.
+    <ul>
+      <li>CTAN release: <a href="http://tug.ctan.org/cgi-bin/ctanPackageInformation.py?id=beamerposter">http://tug.ctan.org/cgi-bin/ctanPackageInformation.py?id=beamerposter</a></li>
+      <li>see also <a href="http://tug.ctan.org/tex-archive/macros/latex/contrib/beamerposter/">http://tug.ctan.org/tex-archive/macros/latex/contrib/beamerposter/</a></li>
+   </ul>
+   </p>
+
+   <p>
+    <b>We received so many congratulations and also interesting questions about the <tt>beamerposter</tt> package that I created a <a href="http://groups.google.com/group/beamerposter">beamerposter googlegroup</a>. 
+       Feel free to post your questions, source files, templates, or new style files there</b>.<br/>
+       <b>PLEASE: If you have any beamerposter related question, post it there so that I don't need to answer the same question twice</b>
+<a href="http://groups.google.com/group/beamerposter">
+<table style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <tr><td>
+  <img src="http://groups.google.com/groups/img/3nb/groups_bar.gif"
+         height=26 width=132 alt="Google Groups">
+  </td></tr>
+  <tr><td style="padding-left: 5px;font-size: 125%">
+  <b>LaTeX beamerposter</b>
+  </td></tr>
+  <tr><td style="padding-left: 5px">
+  <a href="http://groups.google.com/group/beamerposter">Visit this group</a>
+  </td></tr>
+</table>
+</a>
+   </p>
+ 
+   <p>Below you will find <a href="#news">new releases</a>, <a href="#example">beamerposter LaTeX template examples</a>, 
+     you can <a href="#download">download style files</a> with corresponding source files, 
+     and a <a href="#faq">FAQ section</a> with user questions.
+  </p>
+
+  <table class="bg">
+      <tr> <td class="bg"><a name="news"></a> LaTeX <tt>beamerposter</tt> - Releases / ChangeLog</td> <td align="right"></td></tr>
+  </table>
+  <ul>
+    <li><a href="download/beamerposter.sty.112"><tt>beamerposter.sty.112</tt></a> - bugfixed custom scale dependent indention and added beamerposterarticle bibliography icon</li>
+    <li><a href="download/beamerposter.sty.111"><tt>beamerposter.sty.111</tt></a> - removed incompatible paralist package, bugfixed list indention problem</li>
+    <li><a href="download/beamerposter.sty.110"><tt>beamerposter.sty.110</tt></a> - improved package errors, warnigs, and info messages</li>
+    <li><a href="download/beamerposter.sty.109"><tt>beamerposter.sty.109</tt></a> - bugfixed list indention problem (e.g. itemize/enumerate/descritpion/etc.), added printer option for external <a href="download/rwth-glossy-uv.df">printer definition files</a></li>
+    <li><a href="download/beamerposter.sty.108"><tt>beamerposter.sty.108</tt></a> - supports external <a href="download/rwth-glossy-uv.df">printer definition files</a>, added grid mode option, renamed beamer specific variables, added font size normalization (scale=1.0 is now default size for all DIN-A(n) sizes)</li>
+    <li><a href="download/beamerposter.sty.107"><tt>beamerposter.sty.107</tt></a> - bugfixed custom size handling, portrait or landscape settings are ignored now</li>
+    <li><a href="download/beamerposter.sty.106"><tt>beamerposter.sty.106</tt></a> - added the 
+        <a href="http://tug.ctan.org/tex-archive/macros/latex/contrib/type1cm/" target="_blank">type1cm package</a> for scalable and 
+        <a href="#hugemath">huge math fonts</a></li>
+    <li><a href="download/beamerposter.sty.105"><tt>beamerposter.sty.105</tt></a> - added version check for <a href="http://dante.ctan.org/CTAN/help/Catalogue/entries/xkeyval.html" target="_blank"><tt>xkeyval</tt></a> package</li>
+    <li>beamerposter.sty.104 - added custom size handling</li>
+    <li>beamerposter.sty.103 - improved predefined size handling</li>
+    <li>beamerposter.sty.102 - minor bugfixes</li>
+    <li>beamerposter.sty.101 - bugfixed size handling</li>
+    <li>beamerposter.sty.100 - first beamerposter release</li>
+  </ul>
+  
+  <table class="bg">
+      <tr> <td class="bg"><a name="example"></a> LaTeX <tt>beamerposter</tt>  - Example</td> <td align="right"></td></tr>
+  </table>
+  <pre style="font-size: small;">
+
+  \documentclass[final]{beamer} % beamer 3.10: do NOT use option hyperref={pdfpagelabels=false} !
+  %\documentclass[final,hyperref={pdfpagelabels=false}]{beamer} % beamer 3.07: get rid of beamer warnings
+  \mode&lt;presentation&gt; {  %% check http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php for examples
+    \usetheme{Berlin}    %% you should define your own theme e.g. for big headlines using your own logos 
+  }
+  \usepackage[english]{babel}
+  \usepackage[latin1]{inputenc}
+  \usepackage{amsmath,amsthm, amssymb, latexsym}
+  %\usepackage{times}\usefonttheme{professionalfonts}  % times is obsolete
+  \usefonttheme[onlymath]{serif}
+  \boldmath
+  \usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}                       % e.g. for DIN-A0 poster
+  %\usepackage[orientation=portrait,size=a1,scale=1.4,grid,debug]{beamerposter}                  % e.g. for DIN-A1 poster, with optional grid and debug output
+  %\usepackage[size=custom,width=200,height=120,scale=2,debug]{beamerposter}                     % e.g. for custom size poster
+  %\usepackage[orientation=portrait,size=a0,scale=1.0,printer=rwth-glossy-uv.df]{beamerposter}   % e.g. for DIN-A0 poster with rwth-glossy-uv printer check
+  % ...
+  %
+  \title[Fancy Posters]{Making Really Fancy Posters with \LaTeX}
+  \author[Dreuw \& Deselaers]{Philippe Dreuw and Thomas Deselaers}
+  \institute[RWTH Aachen University]{Human Language Technology and Pattern Recognition,RWTH Aachen University}
+  \date{Jul. 31th, 2007}
+  \begin{document}
+  \begin{frame}{} 
+    \vfill
+    \begin{block}{\large Fontsizes}
+      \centering
+      {\tiny tiny}\par
+      {\scriptsize scriptsize}\par
+      {\footnotesize footnotesize}\par
+      {\normalsize normalsize}\par
+      {\large large}\par
+      {\Large Large}\par
+      {\LARGE LARGE}\par
+      {\veryHuge veryHuge}\par
+      {\VeryHuge VeryHuge}\par
+      {\VERYHuge VERYHuge}\par
+    \end{block}
+    \vfill
+  \end{frame}
+  \end{document}
+  </pre>
+
+  <table class="bg">
+      <tr> <td class="bg"><a name="download"></a> LaTeX <tt>beamerposter</tt>  - Download - Templates - Themes</td> <td align="right"></td></tr>
+  </table>
+
+  <p>Download an example as <a href="download/beamerposter-example.pdf"><tt>beamerposter-example.pdf</tt></a> from our webserver.<p>
+
+
+  <p><b>Download a complete zip archives <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=625&amp;row=aux"><tt>beamerposter-example2.zip</tt></a> or <a href="download/beamerposter-example.zip"><tt>beamerposter-example.zip</tt></a></b><br>
+  which contain the example pdf with the corresponding theme and all necessary files (note: the included <a href="download/beamerposter.sty"><tt>beamerposter.sty</tt></a> itself might be deprecated!).</p>
+
+  <p><b>Download the latest <a href="download/beamerposter.sty"><tt>beamerposter.sty</tt></a> from our webserver.</b></p>
+
+  <hr>
+  <table border="0" width="100%">
+  <tr>
+    <td align="center">
+      <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=625&amp;row=aux">
+      <img alt="BMVC 2009 Poster"
+      src="images/poster-surf.jpg" border="1" align="middle"
+      vspace="10">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <b>Download all <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=625&amp;row=aux">LaTeX source files</a> of my <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=625&amp;row=pdf">BMVC 2009 Poster</a></b> as an example for a DIN-A0 poster in potrait orientation.
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size:75%">
+      Maybe you are interested in the corresponding <a href="http://www-i6.informatik.rwth-aachen.de/publications/download/625/Dreuw-BMVC-2009.pdf">paper</a> too? 
+    </td>
+  </tr>
+  </table>
+
+  <hr>
+  <table border="0" width="100%">
+  <tr>
+    <td align="center">
+      <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=154&amp;row=aux">
+      <img alt="Interspeech 2007 Poster"
+      src="images/dreuw07-interspeech-poster.gif" border="1" align="middle"
+      vspace="10">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <b>Download the <a href="download/dreuw07-interspeech.tex">LaTeX source file</a> of my <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=154&amp;row=aux">Interspeech 2007 poster</a></b> as an example for a custom size poster 200cm x 120cm in landscape orientation.
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size:75%">
+      Maybe you are interested in the corresponding <a href="http://www-i6.informatik.rwth-aachen.de/publications/download/154/Dreuw--2007.pdf">paper</a> too? 
+    </td>
+  </tr>
+  </table>
+
+    <hr>
+
+  <table border="0" width="100%">
+  <tr>
+    <td align="center">
+      <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=533&amp;row=aux">
+      <img alt="LREC 2008 Poster"
+      src="images/dreuw08-lrec-poster.gif" border="1" align="middle"
+      vspace="10">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <b>Download the <a href="download/dreuw08-lrec.tex">LaTeX source file</a> of my 
+      <a href="http://www-i6.informatik.rwth-aachen.de/publications/downloader.php?id=533&amp;row=aux">LREC 2008 poster</a></b> 
+      as an example for a custom size poster 150cm x 90cm in portrait orientation.<br>
+      You can also download the new <a href="download/beamerthemeIcy.sty">Icy-beamertheme style file</a>.
+    </td>
+  </tr>
+  </table>
+
+  <table class="bg">
+      <tr> <td class="bg"> LaTeX <tt>beamerposter</tt>  - Styles</td> <td align="right"></td></tr>
+  </table>
+
+  <table width="100%" align="center">
+    <tr> 
+      <td align="center">
+      <a href="download/example-style-I6ac.pdf">
+        <img alt="Style Example" src="images/example-style-I6ac.gif" border="1" align="middle" vspace="10">
+      </a>
+      <a href="download/beamerthemeAachen.sty">beamerthemeAachen.sty</a>
+      | <a href="download/example-style-I6ac.tex">example-style-I6ac.tex</a>
+      </td>
+    </tr>
+    <tr> 
+      <td align="center">
+      <a href="download/example-style-I6pd.pdf">
+      <img alt="Style Example" src="images/example-style-I6pd.gif" border="1" align="middle" vspace="10">
+      </a>
+      <a href="download/beamerthemeI6pd.sty">beamerthemeI6pd.sty</a>
+      | <a href="download/example-style-I6pd.tex">example-style-I6pd.tex</a>
+      </td>
+    </tr>
+    <tr> 
+      <td align="center">
+      <a href="download/example-style-I6pd2.pdf">
+      <img alt="Style Example" src="images/example-style-I6pd2.gif" border="1" align="middle" vspace="10">
+      </a>
+      <a href="download/beamerthemeI6pd2.sty">beamerthemeI6pd2.sty</a>
+      | <a href="download/example-style-I6pd2.tex">example-style-I6pd2.tex</a>
+      </td>
+    </tr>
+    <tr> 
+      <td align="center">
+      <a href="download/example-huge-math-with-type1cm.pdf">
+      <img alt="Style Example" src="images/example-huge-math-with-type1cm.gif" border="1" align="middle" vspace="10">
+      </a>
+      <a name="hugemath"></a> Huge math font example using <a href="download/beamerthemeI6pd2.sty">beamerthemeI6pd2.sty</a>
+      </td>
+    </tr>
+    <tr> 
+      <td align="center">
+      <a href="download/example-style-I6dv.pdf">
+      <img alt="Style Example" src="images/example-style-I6dv.gif" border="1" align="middle" vspace="10">
+      </a>
+      <a href="download/beamerthemeI6dv.sty">beamerthemeI6dv.sty</a>
+      | <a href="download/example-style-I6dv.tex">example-style-I6dv.tex</a>
+      </td>
+    </tr>
+    <tr> 
+      <td align="center">
+      <a href="download/example-style-I6td.pdf">
+      <img alt="Style Example" src="images/example-style-I6td.gif" border="1" align="middle" vspace="10">
+      </a>
+      <a href="download/beamerthemeI6td.sty">beamerthemeI6td.sty</a>
+      | <a href="download/example-style-I6td.tex">example-style-I6td.tex</a>
+      </td>
+    </tr>
+  </table>
+
+
+  <table class="bg">
+      <tr> <td class="bg"><a name="faq"></a> LaTeX <tt>beamerposter</tt>  - FAQ</td> <td align="right"></td></tr>
+  </table>
+  <ul>
+  <li>How to create boxes with fixed header height (i.e. baseline problem depending on characters)?.<br>
+       Inside your theme you have to change within <tt>\setbeamertemplate{block begin}</tt> to (by Matthias Wächter, thx :-)
+<pre style="font-size: small;">
+
+  \begin{beamercolorbox}[center,leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}%
+    {\rule[-0.4ex]{0mm}{2ex}\insertblocktitle}%
+  \end{beamercolorbox}%
+  </pre>  
+  </li>
+  <li>How to create boxes with fixed height (e.g. 20cm)?<br>
+      Inside your theme you have to change within <tt>\setbeamertemplate{block begin}</tt> to 
+  <pre style="font-size: small;">
+
+\begin{beamercolorbox}[ht=20cm,...]{block body}
+  </pre>
+  </li>
+  <li>How to create boxes which are filled until the bottom of the poster?<br>
+  <b>I don't know, because this here doesn't work</b>:
+  <pre style="font-size: small;">
+
+\setlength{\rest}{\textheight}
+\addtolength{\rest}{-\pagetotal}
+\vskip\rest
+</pre>
+Please write me an email if you know how.
+  </li>
+<li>Can I use beamerposter to generate LaTeX beamer <a name="169-slides"><b>16:9 slides</b></a> 
+  in an aspect ratio for a 16:9 projector or a widescreen TV?<br>
+  In principle yes (there might be better ways to solve this problem), just check that 
+  your <i>width</i> and <i>height</i> ratio is close to 1.78 (16:9) and try 
+  different and small font scale values, e.g. 
+  <pre style="font-size: small;">
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter} 
+  </pre>
+
+  <a href="download/example-4-3.pdf">
+  <img alt="Style Example" src="images/example-4-3.gif" border="1" align="middle" vspace="10">
+  </a>
+  <a href="download/example-16-9.pdf">
+  <img alt="Style Example" src="images/example-16-9.gif" border="1" align="middle" vspace="10">
+  </a>
+
+  <li>my printer doesn't support borderless printing, how can I change the margin values?<br>  
+  Simply use the pdfnup tool with negative trim values, e.g. 
+  <pre style="font-size: small;">                                                    
+    pdfnup --nup 1x1 --trim "-44mm -44mm -44mm -44mm" myposter.pdf
+  </pre>
+  
+
+  Another option might be to use the pgfpages package (works for DIN sized posters, by Florian Hengstberger :-)
+  <pre style="font-size: small;">                          
+  \usepackage[orientation=landscape,size=a0,scale=1.5]{beamerposter}
+  \usepackage{pgfpages}
+  \pgfpagesuselayout{resize to}[a0paper,landscape,border shrink=10mm]
+  </pre>
+ 
+  </li>
+
+  
+
+  </ul>
+
+  <table class="bg">
+      <tr> <td class="bg"> LaTeX - Misc</td> <td align="right"></td></tr>
+  </table>
+  <ul>
+  <li>If you have to <a href="videotools.html">cut, resize, or convert images/videos</a> for your LaTeX slides, 
+      you should have a look at my <a href="videotools.html">video tools summary page for mplayer, mencoder, 
+      or ffmpeg</a></li>
+  <li>If you use (X)Emacs and would like to use <a href="reftex-hyperref-autoref.php">hyperref's <tt>autoref</tt> 
+      inside AUCTeX</a>, you should have a look at my <a href="reftex-hyperref-autoref.php">RefTeX - Hyperref - Autoref
+      extension page</a>.</li>
+  <li>If you have to <a href="bashtools.html">embed all your fonts into your latex generated PDF document</a>, 
+      you should have a look at may <a href="bashtools.html">bashtools page</a>.</li>
+  </ul>
+
+<hr>
+    <address><a href="mailto:dreuw@cs.rwth-aachen.de">Philippe Dreuw</a></address>
+<!-- Created: Mon Jul 31 10:10:58 CET 2007 -->
+<!-- hhmts start -->Last modified: Tue Aug 27 15:34:11 CEST 2010 <!-- hhmts end -->
+      
+      <a href="http://www.rwth-aachen.de/zentral/disclaimer.htm">Disclaimer</a>. Created Mon Jul 31 10:10:58 CET 2007
+</div>
+    
+    <p>
+      <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-html401-blue"
+        alt="Valid HTML 4.01 Transitional" height="31" width="88" border="0"></a>
+      
+      <a href="http://www.xemacs.org/About/created.html"><img border="0"
+          src="images/logo_xemacs.jpg" alt="xemacs logo"></a>
+      
+      <a href="http://www.debian.org"><img border="0"
+          src="images/debian.png" alt="debian logo"></a>
+    </p>   
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2956094-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body> 
+</html>
