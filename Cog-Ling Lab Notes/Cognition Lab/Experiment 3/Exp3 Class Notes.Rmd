@@ -1,0 +1,301 @@
+---
+title: "Experiment 3"
+author: "Darrell Penta"
+date: "April 3, 2015"
+output: html_document
+---
+
+***
+## I. EXP OVERVIEW
+### a. What you did 
+You saw a grid of letters (6 columns and 20 rows), and before seeing these, a target letter was shown and you were supposed to look through the grid top to bottom and we measured the time it took find the target.  We measured __RT__ as the time it took to find target in the midst of distractors
+
+This is a visual search task:
+
+* doesn't depend on working memory
+* finding a visual representation in the midst of other visual representations
+* it's a pattern recognition process
+
+We do this all the time. _Finding a friend in a crowd; finding the match to your sock on the floor of your bedroom_
+
+### b. Experimental questions
+* _What are visual patterns like?_ _How are they stored?_ 
+    + These are questions about representations. 
+
+*  _What's the process like?_ 
+    + "Test process" (the overall process was enforced, which was to look serially from top to bottom, so we want to know about the test instead-- that is, how does the matching of visual input against a stored pattern work)
+
+* _How similar is target to the distractor?_
+    + (VWYK), (CDGO) vs. Z and Q
+    
+* _How is similarity defined?_ _Over what properties?_ _What are the kinds of things that matter for visual similarity?_
+
+***
+
+## II. BACKGROUND
+
+
+### a. The template Theory
+* Visual patterns are overlays
+* They're like cookie cutters
+* They have to be good enough to match the desired cases and to reject the others
+* must be able to:
+      + align
+      + rotations
+      + scale them
+
+* This get complicated with three dimensional objects; This is a problem for vision in general, since mapping 3 dimension to the retina (two dimensions) means loosing a dimension. 
+
+#### __Phillips (1972)__
+* Iconic memory (or very short term visual buffer)
+    * gave Ps a grid-based dot pattern, then a delay, and then another grid
+    * Ps were asked whether they matched (sometimes it was the same grid, other times, it was the same pattern but shifted relative to the original grid
+    * Used various inter-stimulus-intervals (20, 60, 100, 300, 600ms)
+    * compared exact matches so shifted cases
+
+People are very accurate for match cases from 20ms (100% correct) to about 100s, then closer to chance (60%); for shifted cases, people just hover around 60% correct. Phillips suggests that there is a template system available for use in very short-term visual tasks
+(note: early fingerprint and face recognition systems used template matching)
+
+ ![](https://miltontan.files.wordpress.com/2010/05/the-cat.jpg) 
+ 
+ * Template theory needs to be able to explain why the H-A are different. 
+ * Visual ambiguity is not well-handled in this theory
+
+
+The feature theory
+---------------------
+-Visual patters are collections of features
+-align, rotate, and scale over all features simultaneously
+
+-Features can be shared across objects;  you can count overlapping features. 
+Ex> Q and O, are similar based on feature overlap: (,),~ vs. (,) 
+
+GIBSON (1969)
+Discusses good sets of features for given domains
+_visual Features need to be critical-- they must differentiate among representations
+_Visual features should be invariant over a variety of changes in brightness, size, perspective
+_unique pattern for each thing to be recognized. 
+_Feature set should be small relative to the things in the domain
+
+Evidence:
+If you highlight features that differentiate each other, kids can learn more easily (E vs. F)
+
+Gibson, Shapiro, Yonas (1968)
+-Adults saw pairs of letters, and had to decide whether letters were same or difference
+(Hyp. people would confuse them if they were similar): {{{M-N},W}, {E-F}} vs. CG, PR
+
+Results split as curvy vs. straight features; 
+
+Features theories also have trouble with "THE CAT"-- 
+--you can add information about how the paces fit together-- how they map onto each other. 
+
+## Structural feature
+Context | Letters
+--------|--------
+VWYK	  |		CDGO
+
+
+TEMPLATE PREDICTIONS:
+1. Q or Z might bet harder to to find, or not (Neither theory cares)
+2. Angular might be harder than rounded, or vice versa (or not)
+**But, since context and target vary, there are different predictions, since on 25% of the trials, a rounded letter will be in a round context, and also, angular in angled context:
+__Q<sub>ROUND</sub>__, __Q<sub>ANGLE</sub>__, __Z<sub>ROUND</sub>__, __Z<sub>ANGLE</sub>__
+3. Template just matches template serially over target; speed is not influenced by context, since similarity is not discernible in Templ. Theory.
+
+FEATURE PREDICTIONS:
+1. Q or Z might bet harder to to find, or not (Neither theory cares)
+2. Angular might be harder than rounded, or vice versa (or not)
+3. Feature similarity determines amount of match (= difficult)
+---Targets are slower in ambiguous context
+Partial matches ( e.g., "(" when looking for "(,),~") will slow the system down
+
+__Q<sub>ROUND</sub>__, lots of overlap
+__Q<sub>ANGLE</sub>__, very little
+__Z<sub>ROUND</sub>__, no overlap
+__Z<sub>ANGLE</sub>__, maybe a ltitle
+
+============================METHODS============================
+PARS: 16 NU Undergrads
+APP: MicroExperimental lab sortware running DOS
+Materials: 2 target letters, q or z, and context letters, VNYK, angular, and CDGO, all capitals, 6 col by 20 row grid
+PROC: 
+Overall: Instructions on screen at beginning about how to do trial, one practice trial, 160 experimental trials, 20 minutes
+Individual: Target letter displayed (q or z), press return when ready, grid appears on screen, do search, and press space when found; Y/N confirmation if thought trials was done correctly. 
+
+Design:
+
+IVS>
+1.Target letter 
+===two levels (Q, Z)
+2. context
+===two levels (Rounded, angular)
+3. Row --in which target appears, targets presented equally often in each row---20 levels, 1-20
+4. Repetition- two repetitions of each combination of the other three independent variables
+All IVs manipulated within Ps
+
+2 target X 2 context X 20 rows x 2 repetition = 160 trials
+
+DVs>
+Reaction time, measured from when grid appears to when space bar was pressed
+
+***
+
+## ANOVA
+### Main Effects (in factor, comparing levels to eachother) 
+* e.g., is q faster than z  (is one level of target faster than the other?) This is a t-test when there's only two levels---- looks at the differences in two means relative to variation for each level
+* Collapsing over all other IVS
+* We're looking for a target and context main effect
+
+### Interactions 
+* We have 2 IVs, so we'll be looking for combinations for IV<sub>1</sub> vs. IV<sub>2</sub>
+* Feature theory cares about interaction of target and context:
+    + __Q<sub>ROUND</sub>__ > __Q<sub>ANGLE</sub>__
+    + __Z<sub>ROUND</sub>__ <= __Z<sub>ANGLE</sub>__
+* Parallel lines mean no interaction
+
+***
+## Results
+* No data were thrown out
+* We filtered out trials in which the participant indicated that they had done the trial incorrectly
+### Context by Target Analyses
+#### Collapsing
+
+* Collapsed over repetition by taking means
+* Collapsed over row by taking means 
+    + this give us four values for each person, __Q<sub>ROUND</sub>__, Qand, __Z<sub>ROUND</sub>__, __Z<sub>ANGLE</sub>__
+* Collapsed over participants by taking means    
+
+> Students need to present **target** by **context** means in a figure
+ Report patterns 
+ Report anova stats
+
+#### ANOVA Results
+We ran a 2 (**Target**) X 2 (**Context**) ANOVA
+
+> Neal explains *degrees of freedom*: If you know the mean RT is 4150, and you know that one of the means is, for example, Q=4300, we can compute the other as 4000. 
+
+* We did not find a ME effect of __Target__: letter (F(1,15) = 2.19, _p_ > .15)
+* We did not find a ME effect of __Context__: (F(1,15) = 1.71, _p_ > .20)
+* We _DID_ find an interaction between __Target__ and __Context__: (F(1,15) = 77.8, _p_ < .001)
+
+### Row analyses
+
+#### Collapsing
+
+* Collapsed over repetition by taking means
+* Collapsed over target and context by taking means 
+    + this give us an overall R<sub>n</sub> mean for each person
+* Collapsed over participants, giving us a set of row means
+
+If people are paying attention to the instructions, there should be larger reaction times as the row number increases.
+
+"Reaction Time by Row" plot
+Reason Time (ms)
+Row
+
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+library(ggplot2)
+
+rt.by.row <- data.frame(
+Row = c(1:20),
+RT = c(2120,2011,2431,2545,3183,3126,3350,3499,3825,4217,4150,4672,4902,5007,5234,5775,5722,5936,6049,6021)
+)
+model <- lm(formula = RT ~ Row, data = rt.by.row)
+eqn <- as.character( as.expression(
+substitute(italic(y) == a + b * italic(x) * "," ~~ italic(r)^2 ~ "=" ~ r2,
+           list(a = format(coef(model)[1], digits = 3),
+                b = format(coef(model)[2], digits = 3),
+                r2 = format(summary(model)$r.squared, digits=2)
+                ))))
+```
+
+
+```{r, echo=FALSE}
+
+pl<-ggplot(rt.by.row, aes(x = Row, y = RT))
+pl + geom_point() + geom_smooth(method = lm, se = FALSE) +  theme_classic() + scale_x_continuous(breaks=c(1:20)) +
+  annotate("text", label = eqn, parse = TRUE, x = Inf, y = -Inf, hjust = 1.1, vjust = -.5)
+
+```
+
+We have a slope: y(RT) = 229x(row) + 1779
+
+What does this tell us (that it take approximate. 229ms/row to scan one row)
+
+You also want a Pearson R value:
+* r=.99
+* _p_<.001
+
+***
+Feature Theory (Talked about in Intro):
+
+* Knows and cares about _amount_ of overlap
+* computes this overlap by comparing number of features shared (e.g., Q vs. D): (, ), ~ vs. ), |
+* more shared features means slower reaction times
+  + Q<sub>ROUND</sub> > Q<sub>ANGULAR</sub>
+  + Z<sub>ROUND</sub> &le; Z<sub>ANGULAR</sub>
+  
+  # Discussion
+* Template theory doesn't have a way of talking about anything other than overall overlap
+* It doesn't say anything about combinations (It shouldn't know that a Q overlapped with a D has some overlap with a Q overlapped with a V)
+* Predicts no interaction between target and context
+* Specific pattern of results matches the feature theory predictions
+* WE can define a specific set of features for the relevant letters, and we can define a function that computes amount of overlap
+    + we have a set of features counted up (see table
+    
+    
+
+$\[%overlap= # of matching features/# of features in context\]$  
+  (% overlap, # features matching / # of features in context =  Q<sub>ROUND</sub> 2/5=40%,, q<sub>ANGULAR</sub> = 1/8 = 12.5%
+      + % overlap, # features matching / # of features in context =  Z<sub>ROUND</sub> 0/5=0%, Z<sub>ANGULAR</sub> = 1/8 = 12.5%
+    
+Bose we don't see a perfect match in the computations and the results, there's more to the story 
+-potential problem: we're not considering how many times each of the features appear, we might want to adjust the function to weight features
+
+Letter | Features | No. of Features
+---------------------------------
+Z      | ,/,- | 3
+
+  
+
+We found an interaction, which fits with the feature theory but does not fit with the template theory
+-What might you do to the template theory to explain the patter?
+-    
+
+# STructural Feature Theory
+-Pure feature theory doesn't consider relative positioning of features
+
+***
+### READINGS:
+* Neisser, U. (1967) _Cognitive Psychology_. Englewood Cliffs, NJ: Prentice-Hall. [Neisser (1967)](http://infinitychallenge.com/articles/Neisser_1967.pdf)
+* Reed, S.K. (1998) _Cognition: Theory and appliciations. Pacific Grove, CA: Brooks/Cole. [Reed (1988)](http://infinitychallenge.com/articles/Reed_1967.pdf)
+
+
+```{r}
+library(languageR) 
+library(reshape2)
+library(plyr)
+library(stringr)
+# target: 1=Q, 2=Z
+# context: 1=rnd, 2=ang
+# row: 1-20
+# Rep
+# 1\2\12\1
+setwd("/Users/darrellpenta/Desktop/kim-chee/Cog-Ling Lab Notes/Cognition Lab/Experiment 3")
+class.dat.base <- read.table("data/EXP3.txt", header = T) 
+colnames(class.dat.base) <- c("subj", "trial", "target", "context", "row", "rep","RT","OK")
+class.dat    <- subset(class.dat.base, target != 1 & context != 2 & row != 12 & rep != 1 & OK != 2)
+View(class.dat)
+
+# CAT: Collapse over subject
+d.cat$unique.id <- paste(d.cat[, 1], d.cat[, 3], d.cat[, 4], d.cat[, 5], sep = "_")
+d.cat           <- ddply(d.cat, "unique.id", function(X) data.frame(vtime = mean(X$vtime)))
+vtime           <- data.frame(d.cat$vtime)
+d.cat           <- colsplit(d.cat$unique.id, "_", c("subj", "subexp", "headrel", "localrel"))
+d.cat$subj      <- as.factor(d.cat$subj)
+d.cat           <- cbind(d.cat,vtime)
+colnames(d.cat)[5] <- "vtime"
+rm(vtime)
+```
+
