@@ -407,29 +407,30 @@ Feature Theory (Talked about in Intro):
   + Q<sub>ROUND</sub> > Q<sub>ANGULAR</sub>
   + Z<sub>ROUND</sub> <= Z<sub>ANGULAR</sub>
   
-  # Discussion
+# Discussion
 * Template theory doesn't have a way of talking about anything other than overall overlap
 * It doesn't say anything about combinations (It shouldn't know that a Q overlapped with a D has some overlap with a Q overlapped with a V)
 * Predicts no interaction between target and context
 * Specific pattern of results matches the feature theory predictions
 * WE can define a specific set of features for the relevant letters, and we can define a function that computes amount of overlap
-    + we have a set of features counted up (see table
-    
+    + we have a set of features counted up (see table)
+
+#### Calculating % overlap:    
  
-  (% overlap, # features matching / # of features in context =  Q<sub>ROUND</sub> 2/5=40%,, q<sub>ANGULAR</sub> = 1/8 = 12.5%
-      + % overlap, # features matching / # of features in context =  Z<sub>ROUND</sub> 0/5=0%, Z<sub>ANGULAR</sub> = 1/8 = 12.5%
-    
-Bose we don't see a perfect match in the computations and the results, there's more to the story 
+Eq:  (% overlap = # features matching / # of features in context  
+<div stlye="width:50%">
+Target x context|Match/Total|Percentage
+----------------|-----------|----------
+Q<sub>ROUND</sub>| 2/5| 40
+Q<sub>ANGULAR</sub>| 1/8 | 12.5
+Z<sub>ROUND</sub> |0/5| 0
+Z<sub>ANGULAR</sub>| 1/8 |12.5
+</div>    
+Because we don't see a perfect match in the computations and the results, there's more to the story 
 -potential problem: we're not considering how many times each of the features appear, we might want to adjust the function to weight features
 
-Letter | Features | No. of Features
----------------------------------
-Z      | ,/,- | 3
-
-  
-
 We found an interaction, which fits with the feature theory but does not fit with the template theory
--What might you do to the template theory to explain the patter?
+-What might you do to the template theory to explain the pattern?
 -    
 
 <div style="background:#fff0f5;border: 2px solid #990000">
@@ -468,7 +469,7 @@ check axis labels, axis tick spacing, graph titles, etc.
 * Reed, S.K. (1998) _Cognition: Theory and appliciations_. Pacific Grove, CA: Brooks/Cole. [Reed (1988)](http://infinitychallenge.com/articles/Reed_1988.pdf)
 * Schneider, W. (1988) Micro Experimental Laboratory: An integrated system for IBM PC compatibles: _Behavior Research Methods, Instruments, & Computers, 20_, 206-217.
 
-```{r}
+```{r, echo=FALSE, eval=FALSE}
 library(languageR) 
 library(reshape2)
 library(plyr)
