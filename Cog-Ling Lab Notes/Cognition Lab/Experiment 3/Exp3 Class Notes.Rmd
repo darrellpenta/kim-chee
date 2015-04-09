@@ -34,10 +34,9 @@ We do this all the time. _Finding a friend in a crowd; finding the match to your
 
 ## II. BACKGROUND
 
-CLASS NOTES:
 <div style="border: 1px solid #000000; padding: 5px">
 
-### a. The template Theory
+### a. The template theory
 * Visual patterns are overlays
 * They're like cookie cutters
 * They have to be good enough to match the desired cases and to reject the others
@@ -62,12 +61,18 @@ People are very accurate for match cases from 20ms (100% correct) to about 100s,
  
  * Template theory needs to be able to explain why the H-A are different. 
  * Visual ambiguity is not well-handled in this theory
+
+#### PREDICTIONS:
+1. Q or Z might bet harder to to find, or not (Neither theory cares)
+2. Angular might be harder than rounded, or vice versa (or not)
+**But, since context and target vary, there are different predictions, since on 25% of the trials, a rounded letter will be in a round context, and also, angular in angled context:
+__Q<sub>ROUND</sub>__, __Q<sub>ANGLE</sub>__, __Z<sub>ROUND</sub>__, __Z<sub>ANGLE</sub>__
+3. Template just matches template serially over target; speed is not influenced by context, since similarity is not discernible in Templ. Theory.
 </div>
 
 
-READING NOTES:
-<div style="background:#ccffff;border: 1px solid #000000; padding: 5px; margin-left: 25px">
-#### Reed (1988) 
+<div style="background:#ccffff;border: 1px solid #000000; padding: 5px; margin: 10px 0px 10px 25px">
+#### Notes from Reed (1988) 
 #### Template Theory
 * templates are holistic and unanylzed
 * we compare by measuring overlap
@@ -77,58 +82,39 @@ READING NOTES:
     * alternative descriptions of a pattern are not allowed (e.g., a sail vs. a stringray)
 * can't totally be dismissed though
     * sensory store (Neal calls it _iconic memory_) briefly preserves information so that the observer has more time to recognize a pattern, so patterns must be preserved there if they are to be recognizes
-
-Philliips (1974)    
+    
+##### Philliips (1974)    
 * showed subjects patterns made by randomly filling cells in a matrix for 1 sec, followed at varying intervals by a second identical or similar pattern
 * half the time, the second pattern was in same location, half the time it was shifted horizontally by one cell
     * if template matching is used, 2nd pattern in same location would be easier than shifted pattern
 * Ss decide whether pattern was same or different
 * % correct for match cases drops quickly, suggesting iconic memory has a short duration; % correct for mis-match cases was never great, suggesting Ss were recalling the pattern from visual memory, not from iconic memory
-
-    
 </div>
 
-The feature theory
----------------------
--Visual patters are collections of features
--align, rotate, and scale over all features simultaneously
+<div style="border: 1px solid #000000; padding: 5px">
+### b. The feature theory
+* Visual patterns are collections of features
+* align, rotate, and scale over all features simultaneously
+* Features can be shared across objects;  you can count overlapping features. 
+    * Ex: Q and O, are similar based on feature overlap: (,),~ vs. (,) 
 
--Features can be shared across objects;  you can count overlapping features. 
-Ex> Q and O, are similar based on feature overlap: (,),~ vs. (,) 
+#### Gibson (1969)
+* Discusses good sets of features for given domains
+    * visual Features need to be critical-- they must differentiate among representations
+    * Visual features should be invariant over a variety of changes in brightness, size, perspective
+    * unique pattern for each thing to be recognized. 
+    * Feature set should be small relative to the things in the domain
+*Evidence: If you highlight features that differentiate each other, kids can learn more easily (E vs. F)
 
-GIBSON (1969)
-Discusses good sets of features for given domains
-_visual Features need to be critical-- they must differentiate among representations
-_Visual features should be invariant over a variety of changes in brightness, size, perspective
-_unique pattern for each thing to be recognized. 
-_Feature set should be small relative to the things in the domain
+#### Gibson, Shapiro, Yonas (1968)
+* Adults saw pairs of letters, and had to decide whether letters were same or difference
+    * (Hyp. people would confuse them if they were similar): {{{M-N},W}, {E-F}} vs. CG, PR
+    * Results split as curvy vs. straight features; 
 
-Evidence:
-If you highlight features that differentiate each other, kids can learn more easily (E vs. F)
+* Features theories also have trouble with "THE CAT"-- 
+    * you can add information about how the paces fit together-- how they map onto each other. 
 
-Gibson, Shapiro, Yonas (1968)
--Adults saw pairs of letters, and had to decide whether letters were same or difference
-(Hyp. people would confuse them if they were similar): {{{M-N},W}, {E-F}} vs. CG, PR
-
-Results split as curvy vs. straight features; 
-
-Features theories also have trouble with "THE CAT"-- 
---you can add information about how the paces fit together-- how they map onto each other. 
-
-## Structural feature
-Context | Letters
---------|--------
-VWYK	  |		CDGO
-
-
-TEMPLATE PREDICTIONS:
-1. Q or Z might bet harder to to find, or not (Neither theory cares)
-2. Angular might be harder than rounded, or vice versa (or not)
-**But, since context and target vary, there are different predictions, since on 25% of the trials, a rounded letter will be in a round context, and also, angular in angled context:
-__Q<sub>ROUND</sub>__, __Q<sub>ANGLE</sub>__, __Z<sub>ROUND</sub>__, __Z<sub>ANGLE</sub>__
-3. Template just matches template serially over target; speed is not influenced by context, since similarity is not discernible in Templ. Theory.
-
-FEATURE PREDICTIONS:
+#### PREDICTIONS:
 1. Q or Z might bet harder to to find, or not (Neither theory cares)
 2. Angular might be harder than rounded, or vice versa (or not)
 3. Feature similarity determines amount of match (= difficult)
@@ -139,8 +125,52 @@ __Q<sub>ROUND</sub>__, lots of overlap
 __Q<sub>ANGLE</sub>__, very little
 __Z<sub>ROUND</sub>__, no overlap
 __Z<sub>ANGLE</sub>__, maybe a ltitle
+</div>
 
-<div style="background:#fff0f5">
+<div style="background:#ccffff;border: 1px solid #000000; padding: 5px;  margin: 10px 0px 10px 25px">
+#### Notes from Reed (1988)
+#### Feature Theory
+* Describe patterns by listing parts
+
+##### Gibson (1969) 
+* children learn object identification by discriminating one object from another-- using _distinctive features_
+* Egeland (1975) used color differences to highlight differences between letters (e.g., _G_ vs. _C_, _M_ vs. _N_); children trained on the distinctive features made fewer errors during repeat testing
+* Gibson's criteria are listed
+
+##### Gibson, Schapiro, & Yonas (1968)
+* Ss (college students and 7-year-olds) saw pairs of letters and had to indicate whether they were the same or different
+* two sets of nine leters were used
+* They speculated that similar letters would slow reaction times and confirmed it
+* Analyzed results by _hierarchically clustering_ letters into categories based on their features
+    * found that straight/curved contrast was best predictor of perceived similarity
+</div>
+
+
+<div style="border: 1px solid #000000; padding: 5px">
+## Structural feature
+* Pure feature theory doesn't consider relative positioning of features
+
+
+Context | Letters
+--------|--------
+VWYK	  |		CDGO
+
+</div>
+
+<div style="background:#ccffff;border: 1px solid #000000; padding: 5px;  margin: 10px 0px 10px 25px">
+#### Notes from Reed (1988)
+#### Structural Feature Theory
+* Critical question is how features relate to each other, so making the relations more explicit is the goal of structural theories
+* Grouping the parts can help determine whether the patter is a _sail_ or a _stingray_
+* Start by listing features; then, specify the relation
+* Lockhead & Crist (1980) used a card sorting task with children
+    * kindergarten children sort decks into two bins
+    * decks had either normal letters (e.g., _b_, _p_) or letters marked with dots
+    * children were much faster and less error-prone with dotted letters
+
+</div>
+*** 
+<div style="background:#fff0f5; border: 2px solid #990000">
 ## Abstract (10) 
 * Describe template and feature theories briefly; describe the task; describe predictions and results, focusing on interaction between context and target (no reason to discuss row effects)
 
@@ -164,7 +194,8 @@ In intro or discussion:
 </div>
 
 ***
-## II. METHODS
+<div style="border: 1px solid #000000; padding: 5px">
+## II. METHOD
 
 ### Participants:
 16 NU Undergrads
@@ -198,8 +229,9 @@ Target letter displayed (q or z), press return when ready, grid appears on scree
 
 #### DVs
 1. Reaction time, measured from when grid appears to when space bar was pressed
+</div>
 
-<div style="background:#fff0f5">
+<div style="background:#fff0f5;border: 2px solid #990000">
 ## Method
 
 ### Participants (2)
@@ -276,6 +308,27 @@ We ran a 2 (**Target**) X 2 (**Context**) ANOVA
 * We did not find a ME effect of __Context__: (F(1,15) = 1.71, _p_ > .20)
 * We _DID_ find an interaction between __Target__ and __Context__: (F(1,15) = 77.8, _p_ < .001)
 
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+library(ggplot2)
+
+class.ano <- data.frame(
+letter  = factor(c("Q","Q","Z","Z")),
+context = factor(c("Rnd","Ang","Rnd","Ang"), levels=c("Rnd","Ang")),
+RT    = c(4864, 3807, 3732, 4425))
+```
+
+```{r, echo=FALSE}
+
+# Basic line graph with points
+ano.pl <- ggplot(data=class.ano, aes(x=letter, y=RT, group=context, color=context)) +
+    geom_line() +
+    geom_point() +
+    theme_bw() +
+    scale_fill_hue(name="Context") +
+    ggtitle("Reaction time as a function of context and target letter")
+ano.pl + scale_shape_discrete(name="Context") + scale_color_discrete(name="Context")
+
+```
 ### Row analyses
 
 #### Collapsing
@@ -288,12 +341,11 @@ We ran a 2 (**Target**) X 2 (**Context**) ANOVA
 If people are paying attention to the instructions, there should be larger reaction times as the row number increases.
 
 "Reaction Time by Row" plot
-Reason Time (ms)
+Reaction Time (ms)
 Row
 
 
 ```{r, echo=FALSE, error=FALSE, warning=FALSE}
-library(ggplot2)
 
 rt.by.row <- data.frame(
 Row = c(1:20),
@@ -301,7 +353,7 @@ RT = c(2120,2011,2431,2545,3183,3126,3350,3499,3825,4217,4150,4672,4902,5007,523
 )
 model <- lm(formula = RT ~ Row, data = rt.by.row)
 eqn <- as.character( as.expression(
-substitute(italic(y) == a + b * italic(x) * "," ~~ italic(r)^2 ~ "=" ~ r2,
+substitute(italic(y) == b * italic(x) + a * "," ~~ italic(r)^2 ~ "=" ~ r2 * "," ~~ italic(p) * "<.001",
            list(a = format(coef(model)[1], digits = 3),
                 b = format(coef(model)[2], digits = 3),
                 r2 = format(summary(model)$r.squared, digits=2)
@@ -313,7 +365,8 @@ substitute(italic(y) == a + b * italic(x) * "," ~~ italic(r)^2 ~ "=" ~ r2,
 
 pl<-ggplot(rt.by.row, aes(x = Row, y = RT))
 pl + geom_point() + geom_smooth(method = lm, se = FALSE) +  theme_classic() + scale_x_continuous(breaks=c(1:20)) +
-  annotate("text", label = eqn, parse = TRUE, x = Inf, y = -Inf, hjust = 1.1, vjust = -.5)
+  annotate("text", label = eqn, parse = TRUE, x = Inf, y = -Inf, hjust = 1.1, vjust = -.5) +
+  ggtitle("Reaction time by row") + xlab("Row") + ylab("RT (ms)")
 
 ```
 
@@ -326,7 +379,7 @@ You also want a Pearson R value:
 * _p_<.001
 
 
-<div style="background:#fff0f5">
+ <div style="background:#fff0f5;border: 2px solid #990000">
 ## Results (15)
 
 * dropped any trials where confirmation=<N>
@@ -352,7 +405,7 @@ Feature Theory (Talked about in Intro):
 * computes this overlap by comparing number of features shared (e.g., Q vs. D): (, ), ~ vs. ), |
 * more shared features means slower reaction times
   + Q<sub>ROUND</sub> > Q<sub>ANGULAR</sub>
-  + Z<sub>ROUND</sub> &le; Z<sub>ANGULAR</sub>
+  + Z<sub>ROUND</sub> <= Z<sub>ANGULAR</sub>
   
   # Discussion
 * Template theory doesn't have a way of talking about anything other than overall overlap
@@ -362,9 +415,7 @@ Feature Theory (Talked about in Intro):
 * WE can define a specific set of features for the relevant letters, and we can define a function that computes amount of overlap
     + we have a set of features counted up (see table
     
-    
-
-$\[%overlap= # of matching features/# of features in context\]$  
+ 
   (% overlap, # features matching / # of features in context =  Q<sub>ROUND</sub> 2/5=40%,, q<sub>ANGULAR</sub> = 1/8 = 12.5%
       + % overlap, # features matching / # of features in context =  Z<sub>ROUND</sub> 0/5=0%, Z<sub>ANGULAR</sub> = 1/8 = 12.5%
     
@@ -381,12 +432,10 @@ We found an interaction, which fits with the feature theory but does not fit wit
 -What might you do to the template theory to explain the patter?
 -    
 
-# STructural Feature Theory
--Pure feature theory doesn't consider relative positioning of features
+<div style="background:#fff0f5;border: 2px solid #990000">
 
-Discussion (15)
+## Discussion (15)
 
-<div style="background:#fff0f5">
 * compare results w/predictions (recap predictions if needed)
   * no effect of target or context, compatible w/either theory, but interaction inconsistent w/Template and consistent w/Feature; 
 * explain meaning of slope (time to scan a row) [and mention goodness of fit to regression line for earlier vs later rows (optional; should be here or in Results; nothing to do for Spr2015)];
