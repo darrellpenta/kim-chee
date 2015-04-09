@@ -209,6 +209,7 @@ MicroExperimental lab sortware running DOS
 ### Procedure: 
 #### Overall: 
 Instructions on screen at beginning about how to do trial, one practice trial, 160 experimental trials, 20 minutes
+
 #### Individual: 
 Target letter displayed (q or z), press return when ready, grid appears on screen, do search, and press space when found; Y/N confirmation if thought trials was done correctly. 
 
@@ -287,7 +288,9 @@ Target letter displayed (q or z), press return when ready, grid appears on scree
 ## Results
 * No data were thrown out
 * We filtered out trials in which the participant indicated that they had done the trial incorrectly
-### Context by Target Analyses
+
+### 1. Context by Target Analyses
+
 #### Collapsing
 
 * Collapsed over repetition by taking means
@@ -330,8 +333,8 @@ ano.pl <- ggplot(data=class.ano, aes(x=context, y=RT, group=letter, color=letter
 ano.pl + scale_shape_discrete(name="Target Letter") + scale_color_discrete(name="Target Letter")
 
 ```
-### Row analyses
 
+### 2. RT by Row Analyses
 #### Collapsing
 
 * Collapsed over repetition by taking means
