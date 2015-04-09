@@ -431,7 +431,7 @@ Because we don't see a perfect match in the computations and the results, there'
 
 We found an interaction, which fits with the feature theory but does not fit with the template theory
 -What might you do to the template theory to explain the pattern?
--    
+    
 
 <div style="background:#fff0f5;border: 2px solid #990000">
 

@@ -507,7 +507,7 @@ Eq: (% overlap = # features matching / # of features in context<br />
 <td align="left">40</td>
 </tr>
 <tr class="even">
-<td align="left">q<sub>ANGULAR</sub></td>
+<td align="left">Q<sub>ANGULAR</sub></td>
 <td align="left">1/8</td>
 <td align="left">12.5</td>
 </tr>
@@ -525,7 +525,7 @@ Eq: (% overlap = # features matching / # of features in context<br />
 </table>
 </div>
 <p>Because we don’t see a perfect match in the computations and the results, there’s more to the story -potential problem: we’re not considering how many times each of the features appear, we might want to adjust the function to weight features</p>
-<p>We found an interaction, which fits with the feature theory but does not fit with the template theory -What might you do to the template theory to explain the pattern? -</p>
+<p>We found an interaction, which fits with the feature theory but does not fit with the template theory -What might you do to the template theory to explain the pattern?</p>
 <div style="background:#fff0f5;border: 2px solid #990000">
 <h2>Discussion (15)</h2>
 <ul>
@@ -552,29 +552,6 @@ Eq: (% overlap = # features matching / # of features in context<br />
 <li>Reed, S.K. (1998) <em>Cognition: Theory and appliciations</em>. Pacific Grove, CA: Brooks/Cole. <a href="http://infinitychallenge.com/articles/Reed_1988.pdf">Reed (1988)</a></li>
 <li>Schneider, W. (1988) Micro Experimental Laboratory: An integrated system for IBM PC compatibles: <em>Behavior Research Methods, Instruments, &amp; Computers, 20</em>, 206-217.</li>
 </ul>
-<pre class="r"><code>library(languageR) 
-library(reshape2)
-library(plyr)
-library(stringr)
-# target: 1=Q, 2=Z
-# context: 1=rnd, 2=ang
-# row: 1-20
-# Rep
-# 1\2\12\1
-class.dat.base &lt;- read.table(&quot;data/EXP3.txt&quot;, header = T) 
-colnames(class.dat.base) &lt;- c(&quot;subj&quot;, &quot;trial&quot;, &quot;target&quot;, &quot;context&quot;, &quot;row&quot;, &quot;rep&quot;,&quot;RT&quot;,&quot;OK&quot;)
-class.dat    &lt;- subset(class.dat.base, target != 1 &amp; context != 2 &amp; row != 12 &amp; rep != 1 &amp; OK != 2)
-
-
-# # CAT: Collapse over subject
-# d.cat$unique.id &lt;- paste(d.cat[, 1], d.cat[, 3], d.cat[, 4], d.cat[, 5], sep = &quot;_&quot;)
-# d.cat           &lt;- ddply(d.cat, &quot;unique.id&quot;, function(X) data.frame(vtime = mean(X$vtime)))
-# vtime           &lt;- data.frame(d.cat$vtime)
-# d.cat           &lt;- colsplit(d.cat$unique.id, &quot;_&quot;, c(&quot;subj&quot;, &quot;subexp&quot;, &quot;headrel&quot;, &quot;localrel&quot;))
-# d.cat$subj      &lt;- as.factor(d.cat$subj)
-# d.cat           &lt;- cbind(d.cat,vtime)
-# colnames(d.cat)[5] &lt;- &quot;vtime&quot;
-# rm(vtime)</code></pre>
 </div>
 </div>
 
