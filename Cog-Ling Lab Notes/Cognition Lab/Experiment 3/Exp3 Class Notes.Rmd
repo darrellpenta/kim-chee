@@ -34,6 +34,8 @@ We do this all the time. _Finding a friend in a crowd; finding the match to your
 
 ## II. BACKGROUND
 
+CLASS NOTES:
+<div style="border: 1px solid #000000; padding: 5px">
 
 ### a. The template Theory
 * Visual patterns are overlays
@@ -46,7 +48,7 @@ We do this all the time. _Finding a friend in a crowd; finding the match to your
 
 * This get complicated with three dimensional objects; This is a problem for vision in general, since mapping 3 dimension to the retina (two dimensions) means loosing a dimension. 
 
-#### __Phillips (1972)__
+#### __Phillips (1974)__
 * Iconic memory (or very short term visual buffer)
     * gave Ps a grid-based dot pattern, then a delay, and then another grid
     * Ps were asked whether they matched (sometimes it was the same grid, other times, it was the same pattern but shifted relative to the original grid
@@ -60,7 +62,31 @@ People are very accurate for match cases from 20ms (100% correct) to about 100s,
  
  * Template theory needs to be able to explain why the H-A are different. 
  * Visual ambiguity is not well-handled in this theory
+</div>
 
+
+READING NOTES:
+<div style="background:#ccffff;border: 1px solid #000000; padding: 5px; margin-left: 25px">
+#### Reed (1988) 
+#### Template Theory
+* templates are holistic and unanylzed
+* we compare by measuring overlap
+    * problematic becase template would need to be in same position and orientation
+    * lots of variablity in patterns
+    * can't describe the difference between two patterns (e.g., can't say why _R_ differs from _P_ because no access to features)
+    * alternative descriptions of a pattern are not allowed (e.g., a sail vs. a stringray)
+* can't totally be dismissed though
+    * sensory store (Neal calls it _iconic memory_) briefly preserves information so that the observer has more time to recognize a pattern, so patterns must be preserved there if they are to be recognizes
+
+Philliips (1974)    
+* showed subjects patterns made by randomly filling cells in a matrix for 1 sec, followed at varying intervals by a second identical or similar pattern
+* half the time, the second pattern was in same location, half the time it was shifted horizontally by one cell
+    * if template matching is used, 2nd pattern in same location would be easier than shifted pattern
+* Ss decide whether pattern was same or different
+* % correct for match cases drops quickly, suggesting iconic memory has a short duration; % correct for mis-match cases was never great, suggesting Ss were recalling the pattern from visual memory, not from iconic memory
+
+    
+</div>
 
 The feature theory
 ---------------------
@@ -120,16 +146,24 @@ __Z<sub>ANGLE</sub>__, maybe a ltitle
 
 ## Intro (20)
 * General introductory paragraph w/an everyday example; 
-* Description of __template theory__ w/examples of use (e.g., [fingerprint ID, face recognition, -- SKIPPED in Spr2015] 
-    * iconic memory - Phillips expt, other examples from readings;
-    * Phillips is only one we ended up talking about in class in any detail) and presentation of advantages (simple) and problems (e.g., need for multiple templates, difficulty handling variation in wide-ranging domains, difficulty with various transformations, difficulty with ambiguity);
-* description of __feature theory__ w/examples of use (e.g., letter features) and some discussion of supporting studies (lots of possibilities from the reading), advantages (simpler to store representations), and problems (e.g., difficulty with some transformations, difficulty with ambiguity);
-    * brief description of experimental task; predictions of template theory, describing process of scanning (overlay template successively): no interaction between target & context, no prediction about main effects;
-    * predictions of feature theory, describing process (look for features, so more feature overlap between target and context yields longer RTs): no prediction about main effects, predicts interaction (Qrnd>Qang, Zrnd<=Zang) -- predictions should focus on interaction presence/absence
+* Description of __template theory__ w/examples of use:
+    * (e.g., [fingerprint ID, face recognition, -- SKIPPED in Spr2015] 
+* Iconic memory - Phillips expt, other examples from readings (Phillips is only one we ended up talking about in class in any detail)  
+  * Presentation of advantages (simple) and problems (e.g., need for multiple templates, difficulty handling variation in wide-ranging domains, difficulty with various transformations, difficulty with ambiguity);
+* Description of __feature theory__ w/examples of use (e.g., letter features) and some discussion of supporting studies (lots of possibilities from the reading)
+* advantages (simpler to store representations), and problems (e.g., difficulty with some transformations, difficulty with ambiguity);
+
+* Brief description of experimental task; 
+* Predictions of __template theory__, describing process of scanning (overlay template successively): no interaction between target & context, no prediction about main effects;
+* Predictions of __feature theory__, describing process (look for features, so more feature overlap between target and context yields longer RTs): no prediction about main effects, predicts interaction (Qrnd>Qang, Zrnd<=Zang) -- predictions should focus on interaction presence/absence
+
+In intro or discussion:
+
 * quantitative stuff about % overlap from features can go here, but most likely in the discussion
 * __structural feature theory__  can also be described in intro (after template and feature theories, but probably before presentation of the particlar expt) or in discussion; it should be in at least one of intro & discussion
 </div>
 
+***
 ## II. METHODS
 
 ### Participants:
@@ -382,7 +416,7 @@ check axis labels, axis tick spacing, graph titles, etc.
 ### READINGS:
 * Levy, C.M., & Ransdell, S. E. (1988). _Laboratory in cognition and perception (2nd ed.)._ Iowa City: CONDUIT, Univ. of Iowa.
 * Neisser, U. (1967) _Cognitive Psychology_. Englewood Cliffs, NJ: Prentice-Hall. [Neisser (1967)](http://infinitychallenge.com/articles/Neisser_1967.pdf)
-* Reed, S.K. (1998) _Cognition: Theory and appliciations. Pacific Grove, CA: Brooks/Cole. [Reed (1988)](http://infinitychallenge.com/articles/Reed_1967.pdf)
+* Reed, S.K. (1998) _Cognition: Theory and appliciations_. Pacific Grove, CA: Brooks/Cole. [Reed (1988)](http://infinitychallenge.com/articles/Reed_1988.pdf)
 * Schneider, W. (1988) Micro Experimental Laboratory: An integrated system for IBM PC compatibles: _Behavior Research Methods, Instruments, & Computers, 20_, 206-217.
 
 ```{r}
