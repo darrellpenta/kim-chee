@@ -320,13 +320,14 @@ RT    = c(4864, 3807, 3732, 4425))
 ```{r, echo=FALSE}
 
 # Basic line graph with points
-ano.pl <- ggplot(data=class.ano, aes(x=letter, y=RT, group=context, color=context)) +
+ano.pl <- ggplot(data=class.ano, aes(x=context, y=RT, group=letter, color=letter)) +
     geom_line() +
     geom_point() +
     theme_bw() +
-    scale_fill_hue(name="Context") +
+    xlab("Context") + ylab("Reaction Time (ms)") +
     ggtitle("Reaction time as a function of context and target letter")
-ano.pl + scale_shape_discrete(name="Context") + scale_color_discrete(name="Context")
+
+ano.pl + scale_shape_discrete(name="Target Letter") + scale_color_discrete(name="Target Letter")
 
 ```
 ### Row analyses
