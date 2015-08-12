@@ -1,0 +1,325 @@
+---
+title: "Experiment 4"
+author: "Darrell Penta"
+date: "April 15, 2015"
+output: html_document
+---
+
+***
+## I. EXP OVERVIEW
+### a. What you did 
+
+* You saw a whole punch of letter string, one after another
+  * _Primes_ and _Targets_, both of which had __word__ and __non-word__ versions
+* You just answered yes or no
+* There was also a delay in the timing between the presentation of the prime and the target
+* For word-word target-prime pairings, half of the words share an association
+
+IV | Level
+---|-----
+Prime | Word, Non-word
+Targets | Word, Non-word
+ISI (inter-stimulus interval) | 50ms, 100ms, 200, 350, 500
+Association | association (half the words), not-associated
+
+DV | Level
+----|-----
+RT | How quickly do you decide it's a word
+Trials with no key press set to 0
+
+Accuracy | Were you right
+whether the yes no key press matched target type
+
+### b. Experimental questions
+* _Question here is about timing of information flow in the system_
+    + This is an examination of activition system view of long-term memory (LTM) in which activation is a quantity tha can spread around
+    +  Example:
+    Seeing __EMERALD__ should activate your knowledge of emerald and things related to it, like __DIAMOND__
+* The system tracks these realtionships and uses them during day-to-day operations
+
+
+    
+* _How is knowledge organized in long-term memory?_ 
+
+***
+
+## II. BACKGROUND
+
+<div style="border: 1px solid #000000; padding: 5px">
+
+### Activitation system (a. Theory 1)
+* _Nodes_ which represent something/perice of knowledge that can collect activation
+  * Activation happens quickly, and nodes can activate/deactive quickly
+* _Connections/Links_ between nodes, with activation spreading through the links.
+    + The system change over time (you can learn new things)
+* _Nodes_ have 2 activation levels:
+    + Resting level (non-zero level, but low) is the baseline
+    + current level is dynamic, changes based on things like are you thinking about that word or reading that word, etc
+    + Current level and Resting level can be = and presumably are most of the time
+* _Connections_ have weights/strenghts:
+    + How much information spread at a given moment
+    + Exmample: Due to connection weights, more likely that _EMERALD_ spreads activation to _DIAMOND_, but less to _GREEN_
+    + weights set by prior experience
+    + can change over time by learning based on experience
+* Assocation is not the only kind of relationship
+
+Associative words speed up/prime activation 
+* Can be one way
+
+Ratcliff & McKoon
+Can mess around with episodic memory
+People learn: "The doctor kissed the lawyer"
+They gave people words in tests where the target is something like lawyer, and the preceding word was either from the sentence they learned or not
+
+
+
+
+PARAMETRIC EXPERIMENT
+We're looking at a specific parameter of the system (namely, how quickly activation can spread/timing of activation spread)
+
+
+Unassociated pairing are the baseline.
+Associated should be faster than baseline
+Looking at whether activation has spread to the target or not
+Look at:
+short ISIs tell us how quickly activation spreads
+long ISIs tell us now long activation remains
+
+
+
+<div style="background:#ccffff;border: 1px solid #000000; padding: 5px; margin: 10px 0px 10px 25px">
+#### Notes from (Readings)  
+#### Theory 1
+* point 1 templates are holistic and unanylzed
+    * subpoint 1
+##### Experimenter (year)    
+* Notes
+* Notes
+</div>
+
+<div style="border: 1px solid #000000; padding: 5px">
+### ( b. Theory 2)
+</div>
+
+<div style="background:#ccffff;border: 1px solid #000000; padding: 5px;  margin: 10px 0px 10px 25px">
+#### Notes from (Readings)
+#### Theory 2
+</div>
+
+
+
+*** 
+<div style="background:#fff0f5; border: 2px solid #990000">
+## Abstract (10) 
+* Describe 
+
+## Intro (20)
+* General 
+* Brief description of 
+* Predictions of 
+
+</div>
+
+***
+<div style="border: 1px solid #000000; padding: 5px">
+## II. METHOD
+
+### Participants:
+16 NU Undergrads
+
+### Apparatus:
+MicroExperimental lab sortware running DOS
+
+### Materials:
+Notes
+* non-words were pronouncable
+* associated and unassociated word targets were match for length and frequenc
+### Procedure:
+overall:
+choice of Y/N keys
+instructions
+4 practice trials
+160 exp trials
+15 minutes
+indiv
+spacebar
+-prime
+isi
+target
+y/n
+
+
+
+
+
+#### Overall: 
+Notes
+
+#### Individual: 
+Notes
+
+### Design:
+Notes
+#### IVS
+1. IV1
+    * Level
+2. IV2
+    * All IVs manipulated within Ps
+
+#### DVs
+1. DV1
+</div>
+
+<div style="background:#fff0f5;border: 2px solid #990000">
+## Method
+
+### Participants (2)
+  * 
+
+### Apparatus (2)
+  * 
+
+### Materials (3)
+
+### Procedure (4)
+* notes
+* notes
+
+#### Indiv trial structure
+* notes
+* notes
+#### Overall expt:  
+* notes
+* notes
+
+### Design (4)
+ * notes
+ * notes
+</div>
+
+
+
+***
+
+## Results
+* notes
+* notes
+
+### 1. Which Analyses
+
+#### Collapsing
+
+* Collapsed over 
+* Collapsed over 
+
+
+#### Results
+
+* We did not 
+* We _DID_ find 
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+library(ggplot2)
+
+class.ano <- data.frame(
+letter  = factor(c("Q","Q","Z","Z")),
+context = factor(c("Rnd","Ang","Rnd","Ang"), levels=c("Rnd","Ang")),
+RT    = c(4864, 3807, 3732, 4425))
+```
+
+```{r, echo=FALSE}
+
+# Basic line graph with points
+ano.pl <- ggplot(data=class.ano, aes(x=context, y=RT, group=letter, color=letter)) +
+    geom_line() +
+    geom_point() +
+    theme_bw() +
+    xlab("Context") + ylab("Reaction Time (ms)") +
+    ggtitle("Reaction time as a function of context and target letter")
+
+ano.pl + scale_shape_discrete(name="Target Letter") + scale_color_discrete(name="Target Letter")
+
+```
+
+
+ <div style="background:#fff0f5;border: 2px solid #990000">
+## Results (15)
+
+* dropped 
+Analyses factorial  analysis: 
+  * collapsing; 
+  * describe pattern;
+  * refer to fig; 
+  
+</div>
+***
+Feature Theory (Talked about in Intro):
+
+* Knows and cares about _amount_ of overlap
+* computes this overlap by comparing number of features shared (e.g., Q vs. D): (, ), ~ vs. ), |
+* more shared features means slower reaction times
+  + Q<sub>ROUND</sub> > Q<sub>ANGULAR</sub>
+  + Z<sub>ROUND</sub> <= Z<sub>ANGULAR</sub>
+  
+# Discussion
+* Template theory doesn't have a way of talking about anything other than overall overlap
+* It doesn't say anything about combinations (It shouldn't know that a Q overlapped with a D has some overlap with a Q overlapped with a V)
+* Predicts no interaction between target and context
+* Specific pattern of results matches the feature theory predictions
+* WE can define a specific set of features for the relevant letters, and we can define a function that computes amount of overlap
+    + we have a set of features counted up (see table)
+
+#### Calculating % overlap:    
+ 
+Eq:  (% overlap = # features matching / # of features in context  
+<div stlye="width:50%">
+Target x context|Match/Total|Percentage
+----------------|-----------|----------
+Q<sub>ROUND</sub>| 2/5| 40
+Q<sub>ANGULAR</sub>| 1/8 | 12.5
+Z<sub>ROUND</sub> |0/5| 0
+Z<sub>ANGULAR</sub>| 1/8 |12.5
+</div>    
+Because we don't see a perfect match in the computations and the results, there's more to the story 
+-potential problem: we're not considering how many times each of the features appear, we might want to adjust the function to weight features
+
+We found an interaction, which fits with the feature theory but does not fit with the template theory
+-What might you do to the template theory to explain the pattern?
+    
+
+<div style="background:#fff0f5;border: 2px solid #990000">
+
+## Discussion (15)
+
+* compare results w/predictions (recap predictions if needed)
+  * no effect of target or context, compatible w/either theory, but interaction inconsistent w/Template and consistent w/Feature; 
+* explain meaning of slope (time to scan a row) [and mention goodness of fit to regression line for earlier vs later rows (optional; should be here or in Results; nothing to do for Spr2015)];
+
+* discuss augmentation of Template;
+
+* discuss Structural Feature Theory (if not covered in Intro);
+
+* cover detailed feature theory and quantitative predictions here, relating to ANOVA results, etc. (some flexibility about how much they say about quantitative feature predictions, but they should present a feature-breakdown and work out % of overlap, relating to results, at a minimum); 
+
+* usual general issues & extensions
+
+
+## FIGS AND TABLES (15)
+
+graph for RT by target and context
+
+graph for RT by row, including regression line
+
+check axis labels, axis tick spacing, graph titles, etc.
+
+</div>
+
+
+
+***
+### READINGS:
+* Levy, C.M., & Ransdell, S. E. (1988). _Laboratory in cognition and perception (2nd ed.)._ Iowa City: CONDUIT, Univ. of Iowa.
+* Neisser, U. (1967) _Cognitive Psychology_. Englewood Cliffs, NJ: Prentice-Hall. [Neisser (1967)](http://infinitychallenge.com/articles/Neisser_1967.pdf)
+* Reed, S.K. (1998) _Cognition: Theory and appliciations_. Pacific Grove, CA: Brooks/Cole. [Reed (1988)](http://infinitychallenge.com/articles/Reed_1988.pdf)
+* Schneider, W. (1988) Micro Experimental Laboratory: An integrated system for IBM PC compatibles: _Behavior Research Methods, Instruments, & Computers, 20_, 206-217.
+
